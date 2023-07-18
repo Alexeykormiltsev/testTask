@@ -1,0 +1,151 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header {
+    background: #fff;
+    margin-bottom: 16px;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .nav {
+        button {
+            border-color: transparent;
+            // cursor: pointer;
+        }
+
+        &__menu-btn {
+            // padding: 12px;
+            background: transparent;
+        }
+
+        &__account-btn {
+            @extend %geo-400;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 4px 8px;
+            color: #fff;
+            background: #2179CC;
+            border-radius: 10px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .tabs {
+        padding-bottom: 2px;
+        display: flex;
+        gap: 24px;
+    }
+
+    .tabs>input[type="radio"] {
+        display: none;
+    }
+
+    .tabs>label {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border-bottom: 2px solid #2179CC;
+        // cursor: pointer;
+        @extend %geo-400;
+        // position: relative;
+        // top: 1px;
+    }
+
+    .tabs>label:not(:first-of-type) {
+        border-bottom: none;
+        color: #7B8FA3;
+    }
+
+    // .tabs>input[type="radio"]:checked+label {
+    //     border-bottom: 2px solid #2179CC;
+    // }
+}
+
+.content,
+.post {
+    background: #fff;
+    margin-bottom: 16px;
+
+    &__userbox {
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__username {
+        font-size: 14px;
+        line-height: 20px;
+
+        span {
+            display: block;
+            font-size: 12px;
+            line-height: 16px;
+            color: #7B8FA3;
+        }
+    }
+
+    &__title {
+        @extend %geo-600;
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 28px;
+        white-space: nowrap;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    &__photo {
+        margin-bottom: 8px;
+    }
+
+    &__info-item {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__info-num-accent {
+        color: #FD5D60;
+    }
+
+    &__info-num {
+        color: #7B8FA3;
+    }
+}
+
+
+
+
+@import 'media';
