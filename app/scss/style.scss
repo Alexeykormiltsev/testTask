@@ -133,6 +133,8 @@
         span {
             font-size: 12px;
             line-height: 16px;
+            margin-bottom: 8px;
+            margin-right: 8px;
         }
     }
 
@@ -142,6 +144,25 @@
 
     &__info-num {
         color: #7B8FA3;
+    }
+}
+
+.footer {
+    background: #fff;
+    padding: 12px 0;
+    border-radius: 16px 16px 0px 0px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.24), 0px 4px 8px 3px rgba(0, 0, 0, 0.16);
+
+    &__nav {
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
 }
 
